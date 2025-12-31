@@ -1,90 +1,153 @@
-# FSD - Portfolio de [Ton Nom]
-
-**Document :** FSD_PORTFOLIO.md  
-**Version :** 1.0  
-**Date :** 2025-12-31  
+# FSD – Portfolio Développeur  
+**Functional Specification Document**
 
 ---
 
-## 1. Objectifs du projet
+## 1. Objectif du projet
 
-- Présenter les compétences et expériences en développement web.  
-- Valoriser les projets techniques et réalisations personnelles.  
-- Fournir un CV détaillé et des moyens de contact.  
-- Ajouter des sections personnelles pour refléter la personnalité (passions, hobbies).  
-- Site responsive, moderne et performant.  
+L’objectif de ce projet est de concevoir et développer un **portfolio personnel de développeur**, servant à la fois de :
+- Page de présentation professionnelle
+- CV en ligne narratif
+- Vitrine de projets et de compétences
+- Point de contact professionnel
+
+Le site doit être moderne, clair, maintenable et conforme aux bonnes pratiques du développement web.
 
 ---
 
 ## 2. Règles de développement
 
-- Utiliser **Next.js + TypeScript + Tailwind CSS** pour le développement.  
-- Respect des bonnes pratiques : typage TypeScript, composants réutilisables, structure claire.  
-- Gestion de projet avec **GitHub** (versioning, branches, pull requests).  
-- Déploiement sur **Vercel** pour un site public et performant.  
-- Suivi des conventions de nommage et structure de dossiers.  
+### 2.1 Stack technique
+
+- **Framework** : Next.js (App Router)
+- **Langage** : TypeScript
+- **Styling** : Tailwind CSS
+- **Versioning** : Git
+- **Gestion de projet / code** : GitHub
+- **Environnement de développement** : VS Code + GitHub Copilot
+
+### 2.2 Principes de développement
+
+- Code propre, lisible et structuré
+- Découpage en composants réutilisables
+- Typage strict avec TypeScript
+- Séparation claire entre données, logique et affichage
+- Respect des bonnes pratiques d’accessibilité (HTML sémantique, navigation clavier)
 
 ---
 
-## 3. Structure fonctionnelle du portfolio
+## 3. Architecture générale du site
 
-### 3.1 Présentation
-- **Qui suis-je ?**  
-  Brève introduction, parcours et philosophie personnelle.
-- **Qu’est-ce que j’ai fait, ferai et aimerai faire ?**  
-  Compétences techniques, expériences passées, objectifs futurs.
+Le portfolio est structuré autour de plusieurs pages accessibles via une navigation principale.
 
-### 3.2 CV
-- **Expériences professionnelles** : postes, missions, technologies.  
-- **Éducation** : diplômes, certifications, formations.  
-- **Langues** : compétences linguistiques.  
-- **Compétences (langages et outils)** : frontend, backend, frameworks, outils de développement.
-
-### 3.3 Projets
-- **Projet 1** : description, technologies utilisées, liens GitHub ou site.  
-- **Projet 2** : idem que ci-dessus.  
-> Note : Section à remplir ultérieurement avec les projets réels.
-
-### 3.4 Passions
-- **Musique** : utilisation de l’**API iTunes** pour afficher albums et statistiques (ex. albums par année, genres).  
-- **Jardinage** : présentation des activités et inspirations.  
-- **Autres** : autres passions ou activités personnelles.
-
-### 3.5 Contacts
-- Texte de proposition de contact (ex. "N’hésitez pas à me contacter pour toute collaboration ou question").  
-- Liens vers **LinkedIn, Instagram, GitHub**, et autres réseaux pertinents.  
+### Pages principales :
+- `/` → Présentation / CV
+- `/projets` → Projets
+- `/passions` → Passions
+- `/contact` → Contact
 
 ---
 
-## 4. Architecture technique
+## 4. Page Présentation (Accueil / CV)
 
-- **Framework** : Next.js  
-- **Langage** : TypeScript  
-- **CSS** : Tailwind CSS  
-- **Routing** : basé sur le dossier `app/` (App Router)  
-- **Données** : fichiers TS ou JSON pour projets et compétences  
-- **Composants réutilisables** : Card, Badge, Navbar, Footer  
-- **Déploiement** : Vercel  
+La page de présentation constitue le **cœur du portfolio**.  
+Elle remplit le rôle d’un **CV narratif**, lisible et structuré.
+
+### 4.1 Structure de la page
+
+#### 4.1.1 Profil / À propos
+- Présentation générale
+- Parcours et positionnement professionnel
+- Objectifs actuels
+
+#### 4.1.2 Expériences professionnelles
+- Liste des expériences
+- Pour chaque expérience :
+  - Intitulé du poste
+  - Entreprise
+  - Dates
+  - Description des missions
+  - Technologies utilisées
+
+#### 4.1.3 Formation
+- Parcours académique
+- Formations professionnelles
+- Certifications éventuelles
+
+#### 4.1.4 Compétences
+- Langages de programmation
+- Frameworks et librairies
+- Outils (Git, GitHub, CI/CD, etc.)
+- Compétences transverses (méthodologie, collaboration, etc.)
+
+#### 4.1.5 Langues (optionnel)
+- Langues parlées
+- Niveau estimé
 
 ---
 
-## 5. Roadmap / Chronologie
+## 5. Page Projets
 
-1. Pré-conception et rédaction du FSD  
-2. Mise en place du projet Next.js + TypeScript + Tailwind CSS  
-3. Création des layouts et composants de base  
-4. Développement des sections Présentation, CV et Contacts  
-5. Intégration des projets et fonctionnalités musicales (API iTunes)  
-6. Tests responsive et performance  
-7. Déploiement sur Vercel  
-8. Ajustements et mise à jour du contenu  
+### Objectif
+Présenter les projets réalisés afin d’illustrer les compétences techniques.
+
+### Structure
+- Liste de projets sous forme de cartes
+- Pour chaque projet :
+  - Nom
+  - Description
+  - Technologies utilisées
+  - Lien vers le repository GitHub
+  - Lien vers une démo (si disponible)
+
+> À l’état initial, cette page peut être vide ou contenir un message “Projets à venir”.
+
+---
+
+## 6. Page Passions
+
+### Objectif
+Humaniser le profil et montrer des centres d’intérêt personnels.
+
+### Sections prévues
+- **Musique**
+  - Utilisation de l’API iTunes
+  - Affichage des albums
+  - Statistiques simples (genres, artistes, etc.)
+- **Jardinage**
+- **Autres passions**
 
 ---
 
-## 6. Annexes
+## 7. Page Contact
 
-- Inspirations et références : Dribbble, Behance  
-- Wireframes ou schémas (à ajouter)  
-- Notes techniques supplémentaires : conventions de nommage, typage, gestion des props, etc.
+### Objectif
+Permettre une prise de contact simple et professionnelle.
+
+### Contenu
+- Texte de proposition de contact
+- Liens vers les réseaux :
+  - LinkedIn
+  - GitHub
+  - Autres réseaux pertinents
+- (Optionnel) Formulaire de contact
 
 ---
+
+## 8. Évolutions prévues
+
+- Ajout d’animations légères (scroll, transitions)
+- Version PDF du CV téléchargeable
+- Amélioration SEO
+- Internationalisation (FR / EN)
+- Accessibilité avancée
+
+---
+
+## 9. Conclusion
+
+Ce document définit le cadre fonctionnel du portfolio.  
+Il sert de référence tout au long du développement afin de garantir :
+- Cohérence
+- Qualité
+- Évolutivité
