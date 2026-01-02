@@ -1,4 +1,4 @@
-import { MyTimeline } from "@/components/my-timeline";
+import { MySocialIcons } from "@/components/my-social-icons";
 
 // src/app/page.tsx
 export default function HomePage() {
@@ -6,7 +6,7 @@ export default function HomePage() {
     <main className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
       <div className="min-h-screen w-full">
         <div className="absolute top-0 left-0 w-full">
-          <h1>Page Contacts</h1>
+          <MySocialIcons/>
         </div>
       </div>
     </main>
