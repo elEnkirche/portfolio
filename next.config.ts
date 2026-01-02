@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   images: {
     domains:["www.terre.defense.gouv.fr",
-      "www.autre.domaine.fr"
+      "www.naval-group.com"
     ]
   },
 };
