@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { MyNavBar } from "@/components/my-navbar";
-import MyInfiniteGrid from "@/components/my-infinite-grid";
+import SplashWrapper from "@/components/splash-wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,17 +21,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <header>
-          <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          <MyNavBar />
-        </header>
-        <main className="content">{children}</main>
+        <SplashWrapper>
+          <header>
+            <MyNavBar />
+          </header>
+          <main className="content">{children}</main>
+        </SplashWrapper>
       </body>
     </html>
   );
