@@ -37,18 +37,12 @@ export function MyTimeline
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-semibold mb-8">
             Développement d&apos;une solution logicielle en Java pour contrôler les émissions électromagnétiques des bâtiments de surface.
           </p>
-          <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
-              ✅ Suivi de projet via git, gestion de version et mise en place de pipelines CI/CD.
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
-              ✅ Application de design patterns pour un code modulaire et maintenable.
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
-              ✅ Optimisation et restructuration de la base de données pour améliorer les performances et garantir l'intégrité des données.
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
+          <ul className="mb-8 list-none pl-5 space-y-2 text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
+            <li>Suivi de projet via Git, gestion de version et mise en place de pipelines CI/CD.</li>
+            <li>Application de design patterns pour un code modulaire et maintenable.</li>
+            <li>Optimisation et restructuration de la base de données pour améliorer les performances et garantir l’intégrité des données.</li>
+          </ul>
+          {/* <div className="grid grid-cols-2 gap-4">
             <Image
               src="https://www.naval-group.com/sites/default/files/styles/image_single_media_small/public/2020-10/Charles%20de%20Gaulle_1.jpg"
               alt="startup template"
@@ -63,21 +57,7 @@ export function MyTimeline
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
-            <Image
-              src="/public/images/profile-pic.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/public/images/profile-pic.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div>
+          </div> */}
         </div>
       ),
     },
@@ -101,17 +81,17 @@ export function MyTimeline
             Développement d&apos;une solution logicielle en Java pour contrôler les émissions électromagnétiques des bâtiments de surface.
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
               ✅ Suivi de projet via git, gestion de version et mise en place de pipelines CI/CD.
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
               ✅ Application de design patterns pour un code modulaire et maintenable.
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
               ✅ Optimisation et restructuration de la base de données pour améliorer les performances et garantir l'intégrité des données.
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          {/* <div className="grid grid-cols-2 gap-4">
             <Image
               src="https://www.naval-group.com/sites/default/files/styles/image_single_media_small/public/2020-10/Charles%20de%20Gaulle_1.jpg"
               alt="startup template"
@@ -126,21 +106,7 @@ export function MyTimeline
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
-            <Image
-              src="/public/images/profile-pic.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/public/images/profile-pic.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div>
+          </div> */}
         </div>
       ),
     },
@@ -168,17 +134,17 @@ export function MyTimeline
             Développement d&apos;une solution logicielle en Java pour contrôler les émissions électromagnétiques des bâtiments de surface.
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
               ✅ Suivi de projet via git, gestion de version et mise en place de pipelines CI/CD.
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
               ✅ Application de design patterns pour un code modulaire et maintenable.
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
               ✅ Optimisation et restructuration de la base de données pour améliorer les performances et garantir l'intégrité des données.
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          {/* <div className="grid grid-cols-2 gap-4">
             <Image
               src="https://www.naval-group.com/sites/default/files/styles/image_single_media_small/public/2020-10/Charles%20de%20Gaulle_1.jpg"
               alt="projet"
@@ -193,21 +159,7 @@ export function MyTimeline
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
-            <Image
-              src="/public/images/profile-pic.png"
-              alt="projet de Data science"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/public/images/profile-pic.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div>
+          </div> */}
         </div>
       ),
     }, 
@@ -216,7 +168,7 @@ export function MyTimeline
       company: "IUT de Cachan",
       content: (
         <div>
-          <p className="text-neutral-700 dark:text-neutral-200 text-3xl md:text-5xl font-semibold mb-6">
+          <p className="text-neutral-700 dark:text-neutral-200 text-4xl md:text-3xl font-semibold mb-6">
             DUT Génie Electrique et Informatique Industrielle
           </p>
 
@@ -232,45 +184,31 @@ export function MyTimeline
             Développement d&apos;une solution logicielle en Java pour contrôler les émissions électromagnétiques des bâtiments de surface.
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
               ✅ Suivi de projet via git, gestion de version et mise en place de pipelines CI/CD.
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
               ✅ Application de design patterns pour un code modulaire et maintenable.
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
               ✅ Optimisation et restructuration de la base de données pour améliorer les performances et garantir l'intégrité des données.
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="https://www.terre.defense.gouv.fr/sites/default/files/styles/homepage_medallion/public/lycee-militaire-saintcyr-ecole/logo%20LMSCE.png"
+            {/* <Image
+              src="https://www.iut-cachan.universite-paris-saclay.fr/sites/default/files/media/2020-06/IUT-CACHAN.svg"
               alt="startup template"
-              width={200}
+              width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
+            /> */}
+            {/* <Image
               src="https://www.naval-group.com/sites/default/files/styles/image_single_media_small/public/2020-10/Charles%20de%20Gaulle_1.jpg"
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/public/images/profile-pic.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/public/images/profile-pic.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
+            /> */}
           </div>
         </div>
       ),
@@ -296,45 +234,31 @@ export function MyTimeline
             Développement d&apos;une solution logicielle en Java pour contrôler les émissions électromagnétiques des bâtiments de surface.
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
               ✅ Suivi de projet via git, gestion de version et mise en place de pipelines CI/CD.
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
               ✅ Application de design patterns pour un code modulaire et maintenable.
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-sm">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
               ✅ Optimisation et restructuration de la base de données pour améliorer les performances et garantir l'intégrité des données.
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <Image
+            {/* <Image
               src="https://www.terre.defense.gouv.fr/sites/default/files/styles/homepage_medallion/public/lycee-militaire-saintcyr-ecole/logo%20LMSCE.png"
               alt="logo LMSC"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
+            /> */}
+            {/* <Image
               src="/LMSC.jpeg"
               alt="LMSC"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/public/images/profile-pic.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/public/images/profile-pic.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
+            /> */}
           </div>
         </div>
       ),

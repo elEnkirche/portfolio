@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   images: {
     domains:["www.terre.defense.gouv.fr",
-      "www.naval-group.com"
+      "www.naval-group.com",
+      "www.iut-cachan.universite-paris-saclay.fr"
     ]
   },
 };

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { MyNavBar } from "@/components/my-navbar";
+import MyInfiniteGrid from "@/components/my-infinite-grid";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,6 @@ export default function RootLayout({
           <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
           <MyNavBar />
         </header>
-
         <main className="content">{children}</main>
       </body>
     </html>
