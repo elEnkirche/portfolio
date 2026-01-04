@@ -1,5 +1,4 @@
-import MyInfiniteGrid from "@/components/my-infinite-grid";
-import { MyTimeline } from "@/components/my-timeline";
+import { MyTimeline } from "@/components/MyTimeline";
 
 // src/app/page.tsx
 export default function HomePage() {

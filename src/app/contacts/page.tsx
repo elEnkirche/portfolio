@@ -1,4 +1,4 @@
-import { MySocialIcons } from "@/components/my-social-icons";
+import { MySocialIcons } from "@/components/MySocialIcons";
 
 // src/app/page.tsx
 export default function HomePage() {

@@ -54,17 +54,7 @@ export default function SplashScreen({
   onEnter: () => void;
 }) {
   const [gridSize, setGridSize] = useState(40);
-  const [isDark, setIsDark] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-
-  // Sync Dark Mode with HTML class
-  useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [isDark]);
 
   // Motion Values for flashlight
   const mouseX = useMotionValue(0);
@@ -115,19 +105,6 @@ export default function SplashScreen({
         <div className="absolute right-[10%] top-[-10%] w-[20%] h-[20%] rounded-full bg-primary/30 blur-[100px]" />
         <div className="absolute left-[-10%] bottom-[-20%] w-[40%] h-[40%] rounded-full bg-blue-500/40 dark:bg-blue-600/20 blur-[120px]" />
       </div>
-
-      {/* Dark/Light Toggle */}
-      <button
-        onClick={() => setIsDark(!isDark)}
-        className="fixed top-4 right-4 z-50 p-3 rounded-full bg-background/50 backdrop-blur-sm border border-border shadow-lg hover:scale-110 active:scale-95 transition-all flex items-center justify-center"
-        aria-label="Toggle Theme"
-      >
-        {isDark ? (
-          <Sun className="w-5 h-5 text-yellow-500" />
-        ) : (
-          <Moon className="w-5 h-5 text-indigo-500" />
-        )}
-      </button>
 
       {/* Grid Density Control Panel */}
       <div className="absolute bottom-10 right-10 z-30 pointer-events-auto">
