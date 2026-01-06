@@ -80,12 +80,12 @@ export function SocialIcons() {
           />
 
           <span
-            className={`absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 rounded-lg bg-white text-neutral-950 text-[11px] font-medium whitespace-nowrap transition-all duration-300 ease-out ${
+            className={`absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 rounded-lg bg-foreground text-background text-[11px] font-medium whitespace-nowrap transition-all duration-300 ease-out ${
               hoveredIndex === index ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1 pointer-events-none"
             }`}
           >
             {social.name}
-            <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 size-2 rotate-45 bg-white" />
+            <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 size-2 rotate-45 bg-foreground" />
           </span>
         </a>
       ))}
