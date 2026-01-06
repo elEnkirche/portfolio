@@ -84,7 +84,7 @@ export default function SplashScreen({
   //Ajout récent afin d'iplémenter le texte qui change
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
-    () => ["amazing", "new", "wonderful", "beautiful", "smart"],
+    () => ["portfolio", "cv", "atelier", "idée", "site internet"],
     []
   );
 
@@ -129,7 +129,7 @@ export default function SplashScreen({
       </div>
 
       {/* Grid Density Control Panel */}
-      <div className="absolute bottom-10 right-10 z-30 pointer-events-auto">
+      <div className="absolute bottom-10 right-10 z-30 pointer-events-auto hidden md:block">
         <div className="bg-background/80 backdrop-blur-md border border-border p-4 rounded-xl shadow-2xl space-y-3 min-w-[200px]">
           <div className="flex items-center gap-2 text-sm font-medium text-foreground">
             <Settings2 className="w-4 h-4" />
@@ -149,14 +149,12 @@ export default function SplashScreen({
           </div>
         </div>
       </div>
-
-      {/* Main Content (Title + Enter Button) */}
+      
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="relative z-10 text-center space-y-6"
       >
-        <h1 className="text-5xl font-semibold">Portfolio d’Elias</h1>
         {/* Début d'ajout */}
         <div className="flex gap-8 py-20 lg:py-40 items-center justify-center flex-col">
           <div>
@@ -166,7 +164,7 @@ export default function SplashScreen({
           </div>
           <div className="flex gap-4 flex-col">
             <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular">
-              <span className="text-spektr-cyan-50">This is something</span>
+              <span className="text-spektr-cyan-50">Voici mon</span>
               <span className="relative flex w-full justify-center overflow-hidden text-center md:pb-4 md:pt-1">
                 &nbsp;
                 {titles.map((title, index) => (
@@ -194,10 +192,8 @@ export default function SplashScreen({
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              Managing a small business today is already tough. Avoid further
-              complications by ditching outdated, tedious trade methods. Our
-              goal is to streamline SMB trade, making it easier and faster than
-              ever.
+              J'ai conçu ce site avec Next.js afin de m'entrainer au developpement informatique, notamment front-end. 
+              Je me suis aidé de Mistral AI et j'ai utilisé,pour l'instant, de composants 21st dev.
             </p>
           </div>
           <div className="flex flex-row gap-3">
