@@ -46,7 +46,7 @@ export function SocialIcons() {
 
   return (
     <div className="relative flex items-center gap-0.5 px-1.5 py-1.5 rounded-2xl bg-foreground border border-white/8">
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-white/3 to-transparent pointer-events-none " />
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-white/3 to-transparent pointer-events-none" />
 
       {socials.map((social, index) => (
         <a
@@ -54,7 +54,7 @@ export function SocialIcons() {
           href={social.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative flex items-center justify-center size-10 rounded-xl transition-colors duration-200"
+          className="group relative flex items-center justify-center size-10 rounded-xl transition-colors duration-200 z-75"
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
           aria-label={social.name}

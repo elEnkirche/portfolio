@@ -41,7 +41,7 @@ export default function RootLayout({
           <header>
             <MyNavBar />
           </header>
-          <main className="content">{children}</main>
+          <main className="content bg-background">{children}</main>
         </SplashWrapper>
         </MyThemeProvider>
       </body>
