@@ -60,21 +60,15 @@ export function MyTimeline
                 <span className="text-sm text-gray-600">c++</span>
               </div>
             </div>
-
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-semibold mb-8">
-            Développement d&apos;une solution logicielle en Java pour contrôler les émissions électromagnétiques des bâtiments de surface.
+              Développement d&apos;une plateforme de test pour des activités de R&D portant sur la conduite autonome          
           </p>
-          <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-              ✅ Suivi de projet via git, gestion de version et mise en place de pipelines CI/CD.
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-              ✅ Application de design patterns pour un code modulaire et maintenable.
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-              ✅ Optimisation et restructuration de la base de données pour améliorer les performances et garantir l'intégrité des données.
-            </div>
-          </div>
+          <ul className="mb-8 list-none pl-5 space-y-2 text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
+            <li>Intégration de capteurs pour le test de véhicules autonomes et traitement des données.</li>
+            <li>Conception de pièces mécaniques avec Fusion 360.</li>
+            <li>Développement d&apos;un système de lecture de charge batterie via bus CAN pour diagnostic en temps réel.</li>
+            <li>Traitement des données sur Jetson Nano en C++ pour garantir performance et fiabilité.</li>
+          </ul>
         </div>
       ),
     },
@@ -96,22 +90,18 @@ export function MyTimeline
                 <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg" width={30} height={30}/>   
                 <span className="text-sm text-gray-600">solidity</span>
               </div>
+              <div className="flex flex-col items-center justify-center gap-1 rounded-lg border p-2 bg-neutral-100">
+                <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" width={30} height={30}/>   
+                <span className="text-sm text-gray-600">c++</span>
+              </div>
             </div>
-
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-semibold mb-8">
-            Développement d&apos;une solution logicielle en Java pour contrôler les émissions électromagnétiques des bâtiments de surface.
+            Etudiant cycle ingénieur en alternance
           </p>
-          <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-              ✅ Suivi de projet via git, gestion de version et mise en place de pipelines CI/CD.
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-              ✅ Application de design patterns pour un code modulaire et maintenable.
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-              ✅ Optimisation et restructuration de la base de données pour améliorer les performances et garantir l'intégrité des données.
-            </div>
-          </div>
+          <ul className="mb-8 list-none pl-5 space-y-2 text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
+            <li>Apprentissage du développement logicielle dans plusieurs langages</li>
+            <li>Cours de spécialités: Cryptographie, Ethique de l'ingénieur, autre</li>
+          </ul>
         </div>
       ),
     }, 
@@ -133,21 +123,12 @@ export function MyTimeline
             </div>
 
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-semibold mb-8">
-            Développement d&apos;une solution logicielle en Java pour contrôler les émissions électromagnétiques des bâtiments de surface.
+            Etudiant cycle ingénieur en alternance
           </p>
-          <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-              ✅ Suivi de projet via git, gestion de version et mise en place de pipelines CI/CD.
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-              ✅ Application de design patterns pour un code modulaire et maintenable.
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-              ✅ Optimisation et restructuration de la base de données pour améliorer les performances et garantir l'intégrité des données.
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-          </div>
+          <ul className="mb-8 list-none pl-5 space-y-2 text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
+            <li>Apprentissage du développement logicielle dans plusieurs langages</li>
+            <li>Cours de spécialités: Cryptographie, Ethique de l'ingénieur, autre</li>
+          </ul>
         </div>
       ),
     },
@@ -160,28 +141,21 @@ export function MyTimeline
             Baccalauréat STI2D
           </p>
 
-            <div className="grid grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-8 mb-8" >
-              <div className="flex flex-col items-center justify-center gap-1 rounded-lg border p-2 bg-neutral-100">
-                <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg" width={30} height={30}/>   
-                <span className="text-sm text-gray-600">arduino</span>
-              </div>
-              
-            </div>
+          <div className="grid grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-8 mb-8" >
+            <div className="flex flex-col items-center justify-center gap-1 rounded-lg border p-2 bg-neutral-100">
+              <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg" width={30} height={30}/>   
+              <span className="text-sm text-gray-600">arduino</span>
+            </div> 
+          </div>
 
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-semibold mb-8">
-            Développement d&apos;une solution logicielle en Java pour contrôler les émissions électromagnétiques des bâtiments de surface.
+            Etudiant cycle ingénieur en alternance
           </p>
-          <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-              ✅ Suivi de projet via git, gestion de version et mise en place de pipelines CI/CD.
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-              ✅ Application de design patterns pour un code modulaire et maintenable.
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-              ✅ Optimisation et restructuration de la base de données pour améliorer les performances et garantir l'intégrité des données.
-            </div>
-          </div>
+          <ul className="mb-8 list-none pl-5 space-y-2 text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
+            <li>Apprentissage du développement logicielle dans plusieurs langages</li>
+            <li>Cours de spécialités: Cryptographie, Ethique de l'ingénieur, autre</li>
+          </ul>
+
           <div className="grid grid-cols-2 gap-4">
             {/* <Image
               src="https://www.terre.defense.gouv.fr/sites/default/files/styles/homepage_medallion/public/lycee-militaire-saintcyr-ecole/logo%20LMSCE.png"
@@ -203,10 +177,8 @@ export function MyTimeline
     },
   ];
   return (
-    <div className="min-h-screen w-full">
-      <div className="absolute top-0 left-0 w-full">
-        <Timeline data={data} />
-      </div>
+    <div className="absolute top-0 left-0 w-full">
+      <Timeline data={data} />
     </div>
   );
 }
