@@ -4,11 +4,7 @@ import { MyTimeline } from "@/components/MyTimeline";
 export default function HomePage() {
   return (
     <div className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
-      <div className="min-h-screen w-full">
-        <div className="absolute top-0 left-0 w-full">
           <MyTimeline/>
-        </div>
-      </div>
     </div>
   );
 }

@@ -12,7 +12,7 @@ export default function HomePage() {
     "> 
       <MySocialIcons/>
       <h1 className="text-base font-semibold tracking-tight text-foreground">Consultez mon CV - Version française & anglaise disponibles</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl h-[180vh] md:h-[50vh] px-0.5 md:px-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl h-[190vh] md:h-[50vh] px-0.5 md:px-8">
         <div className="flex flex-col gap-2">
           <h3 className="text-sm font-medium text-foreground text-center">
             CV – Français
