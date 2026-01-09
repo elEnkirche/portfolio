@@ -3,7 +3,7 @@ import { MySocialIcons } from "@/components/MySocialIcons";
 // src/app/page.tsx
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-background w-full gap-12 overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-background w-full gap-12 overflow-hidden mt-16 md:mt-20">
       <MySocialIcons/>
       <h1 className="text-lg font-semibold tracking-tight text-foreground">Consulter mon CV - Version française & anglaise disponibles</h1>
       <div className="grid grid-cols-2 gap-8 w-full max-w-6xl h-[40vh] px-8">

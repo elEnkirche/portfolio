@@ -191,7 +191,7 @@ export default function SplashScreen({
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
+            <p className="text-sm md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
               J'ai conçu ce site avec Next.js afin de m'entrainer au developpement informatique, notamment front-end. 
               Je me suis aidé de Mistral AI et j'ai utilisé,pour l'instant, de composants 21st dev.
             </p>
@@ -201,7 +201,7 @@ export default function SplashScreen({
               Me Contacter <PhoneCall className="w-4 h-4" />
             </Button>
             <Button onClick={onEnter} size="lg" className="gap-4">
-              Sign up here <MoveRight className="w-4 h-4" />
+              Entrer <MoveRight className="w-4 h-4" />
             </Button>
           </div>
         </div>
