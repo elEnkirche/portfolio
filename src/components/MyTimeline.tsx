@@ -46,6 +46,25 @@ export function MyTimeline
       ),
     },
     {
+      title: "Depuis 2024",
+      company: "Garde républicaine",
+      content: (
+        <div>
+          <p className="text-neutral-700 dark:text-neutral-200 text-3xl md:text-5xl font-bold mb-6">
+            Gendarme réserviste
+          </p>
+
+          <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-semibold mb-8">
+            Réalisation de divers missions pour épauler les gendarmes d'active.
+          </p>
+          <ul className="mb-8 list-none pl-5 space-y-2 text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
+            <li>sécurité et protection des institutions parlementaires </li>
+            <li>maintien de l’ordre dans la capitale</li>
+          </ul>
+        </div>
+      ),
+    },
+    {
       title: "2022 -  2023",
       company: "Expleo Group",
       content: (
@@ -123,11 +142,11 @@ export function MyTimeline
             </div>
 
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-semibold mb-8">
-            Etudiant cycle ingénieur en alternance
+            Etudiant
           </p>
           <ul className="mb-8 list-none pl-5 space-y-2 text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-            <li>Apprentissage du développement logicielle dans plusieurs langages</li>
-            <li>Cours de spécialités: Cryptographie, Ethique de l'ingénieur, autre</li>
+            <li>Apprentissage de l'électronique analogique et numérique</li>
+            <li>...</li>
           </ul>
         </div>
       ),
@@ -149,11 +168,11 @@ export function MyTimeline
           </div>
 
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-semibold mb-8">
-            Etudiant cycle ingénieur en alternance
+            Lycéen
           </p>
           <ul className="mb-8 list-none pl-5 space-y-2 text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-            <li>Apprentissage du développement logicielle dans plusieurs langages</li>
-            <li>Cours de spécialités: Cryptographie, Ethique de l'ingénieur, autre</li>
+            <li>...</li>
+            <li>...</li>
           </ul>
 
           <div className="grid grid-cols-2 gap-4">
