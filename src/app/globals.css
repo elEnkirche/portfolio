@@ -205,7 +205,7 @@ section[id] {
   left: 0;
   right: 0;
   height: 100px; /* Hauteur du fade, ajustez */
-  background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* Blanc ; adaptez à votre bg */
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.055) 0%, rgba(255,255,255,0) 100%); /* Blanc ; adaptez à votre bg */
   pointer-events: none; /* Pour clics traversants */
   z-index: 1;
 }
