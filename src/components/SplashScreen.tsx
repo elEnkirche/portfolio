@@ -81,7 +81,7 @@ export default function SplashScreen({
     radial-gradient(300px circle at ${mouseX}px ${mouseY}px, black, transparent)
   `;
 
-  //Ajout récent afin d'iplémenter le texte qui change
+  //Ajout récent afin d'implémenter le texte qui change
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
     () => ["portfolio", "cv", "atelier", "idée", "site internet"],
