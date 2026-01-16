@@ -35,19 +35,20 @@ export function MyTimeline
             </div>
 
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-semibold mb-8">
-            Développement d&apos;une solution logicielle en Java pour contrôler les émissions électromagnétiques des bâtiments de surface.
+            Développement d&apos;un logiciel de gestion des émissions électromagnétiques pour un navire de surface 
           </p>
           <ul className="mb-8 list-none pl-5 space-y-2 text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-            <li>Suivi de projet via Git, gestion de version et mise en place de pipelines CI/CD.</li>
-            <li>Application de design patterns pour un code modulaire et maintenable.</li>
-            <li>Optimisation et restructuration de la base de données pour améliorer les performances et garantir l’intégrité des données.</li>
+            <li>Portage technologique : Migration d&apos;un logiciel existant (Pascal Objet) vers Java, avec optimisation du code via des design patterns et une refonte partielle de l'architecture.</li>
+            <li>Gestion des données : Modélisation de la base de données, conversion vers des fichiers XML, puis lecture en java.</li>
+            <li>Développement front-end : Création d&apos;une interface web (HTML/CSS/JS) sans framework, conformément aux contraintes internes.</li>
+            <li>Collaboration et livraison : Accompagnement du projet vers une Preuve de Concept (DGA), gestion des versions avec GitLab et mise en place de pipelines CI/CD.</li>
           </ul>
         </div>
       ),
     },
     {
       title: "Depuis 2024",
-      company: "Garde républicaine",
+      company: "Garde Républicaine",
       content: (
         <div>
           <p className="text-neutral-700 dark:text-neutral-200 text-3xl md:text-5xl font-bold mb-6">
@@ -102,24 +103,29 @@ export function MyTimeline
 
             <div className="grid grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-8 mb-8" >
               <div className="flex flex-col items-center justify-center gap-1 rounded-lg border p-2 bg-neutral-100">
+                <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" width={30} height={30}/>   
+                <span className="text-sm text-gray-600">c++</span>
+              </div>
+              <div className="flex flex-col items-center justify-center gap-1 rounded-lg border p-2 bg-neutral-100">
                 <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width={30} height={30}/>   
                 <span className="text-sm text-gray-600">python</span>
               </div>
               <div className="flex flex-col items-center justify-center gap-1 rounded-lg border p-2 bg-neutral-100">
-                <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg" width={30} height={30}/>   
-                <span className="text-sm text-gray-600">solidity</span>
+                <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" width={30} height={30}/>   
+                <span className="text-sm text-gray-600">rust</span>
               </div>
               <div className="flex flex-col items-center justify-center gap-1 rounded-lg border p-2 bg-neutral-100">
-                <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" width={30} height={30}/>   
-                <span className="text-sm text-gray-600">c++</span>
+                <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg" width={30} height={30}/>   
+                <span className="text-sm text-gray-600">solidity</span>
               </div>
             </div>
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-semibold mb-8">
             Etudiant cycle ingénieur en alternance
           </p>
           <ul className="mb-8 list-none pl-5 space-y-2 text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-            <li>Apprentissage du développement logicielle dans plusieurs langages</li>
-            <li>Cours de spécialités: Cryptographie, Ethique de l'ingénieur, autre</li>
+            <li>Première année axée sur les fondamentaux de l’ingénierie : mathématiques appliquées, programmation (C/C++, Python), cryptographie, bases de données, ainsi qu’une initiation à la data science, à l’intelligence artificielle et au traitement du signal.</li>
+            <li>Deuxième année approfondie en technologies avancées : machine learning, développement de réseaux, programmation en Rust et Solidity, ainsi qu’une spécialisation en cryptographie (algorithmes à clé symétrique et asymétrique), complétée par une initiation au droit des entreprises et aux bases de données NoSQL.</li>
+            <li>Troisième année spécialisée dans les technologies financières et blockchain : cryptofinance, systèmes de paiement, développement mobile, monnaies numériques, Lightning Network, preuves à divulgation nulle de connaissance et mécanismes de consensus.</li>
           </ul>
         </div>
       ),
@@ -171,8 +177,9 @@ export function MyTimeline
             Lycéen
           </p>
           <ul className="mb-8 list-none pl-5 space-y-2 text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-            <li>...</li>
-            <li>...</li>
+            <li>Formation scientifique et technique: Acquisition des bases de la conception industrielle, de la mécanique et de la conception de système</li>
+            <li>Cadre militaire en internat: Vie collective rythmée par la discipline, le port de l'uniforme, les cérémonies protocolaires, et les rituels quotidiens.</li>
+            <li>Rigueur et dépassement de soi: Environnement alliant exigence académique, respect des procédures et pratique sportive intensive.</li>
           </ul>
 
           <div className="grid grid-cols-2 gap-4">

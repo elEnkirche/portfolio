@@ -3,12 +3,8 @@ import { MyTimeline } from "@/components/MyTimeline";
 // src/app/page.tsx
 export default function HomePage() {
   return (
-    <main className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
-      <div className="min-h-screen w-full">
-        <div className="absolute top-0 left-0 w-full">
-          <h1>Page projets</h1>
-        </div>
-      </div>
-    </main>
+    <div className="h-screen flex items-center justify-center text-foreground">
+      <h1 className="text-lg font-semibold tracking-tight text-foreground">Page Projets - Bientôt disponible</h1>
+    </div>
   );
 }
