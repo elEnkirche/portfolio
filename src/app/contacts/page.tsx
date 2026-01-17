@@ -49,8 +49,10 @@ export default function Contacts() {
         <div className="flex flex-col items-center gap-3 h-[70vh]">
           <h3 className="text-sm sm:text-base font-semibold text-foreground text-center">Resume – English</h3>
           <iframe 
-            src="/resume_ENKIRCHE.pdf#navpanes=0" 
-            className="w-full flex-1 min-h-[45vh] sm:min-h-[55vh] rounded-xl shadow-xl px-1"
+            src="/resume_ENKIRCHE.pdf#toolbar=0"
+            width="100%" 
+            height="600" 
+            className="w-full flex-1 rounded-xl shadow-xl px-1"
           />
         </div>
       </section>
