@@ -2,6 +2,9 @@
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { useState, useRef, useId, useEffect } from "react";
 
+import { useRouter } from 'next/navigation'
+
+
 interface SlideData {
   title: string;
   button: string;
@@ -16,13 +19,14 @@ interface SlideProps {
 }
 
 const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
+  const router = useRouter();
   const slideRef = useRef<HTMLLIElement>(null);
-
   const xRef = useRef(0);
   const yRef = useRef(0); 
   const frameRef = useRef<number | null>(null) ;
 
   useEffect(() => {
+    
     const animate = () => {
       if (!slideRef.current) return;
 
@@ -68,10 +72,13 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
       <li
         ref={slideRef}
-        className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[150vmin] md:h-[80vmin] mx-[4vmin] z-10 "
-        onClick={() => handleSlideClick(index)}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
+        className="relative flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[150vmin] md:h-[80vmin] mx-[4vmin] z-10 "
+        onClick={(e) => {
+          if ((e.target as HTMLElement).closest("button")) return;
+          handleSlideClick(index);
+        }}
+        onMouseMove={current === index ? handleMouseMove : undefined}
+        onMouseLeave={current === index ? handleMouseLeave : undefined}
         style={{
           transform:
             current !== index
@@ -82,7 +89,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         }}
       >
         <div
-          className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
+          className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden pointer-events-none transition-all duration-150 ease-out"
           style={{
             transform:
               current === index
@@ -91,7 +98,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
           }}
         >
           <img
-            className="absolute inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
+            className="absolute inset-0 w-[120%] h-[120%] object-cover pointer-events-none opacity-100 transition-opacity duration-600 ease-in-out"
             style={{
               opacity: current === index ? 1 : 0.5,
             }}
@@ -102,7 +109,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             decoding="sync"
           />
           {current === index && (
-            <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
+            <div className="absolute inset-0 bg-black/30 pointer-events-none transition-all duration-1000" />
           )}
         </div>
 
@@ -115,7 +122,13 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             {title}
           </h2>
           <div className="flex justify-center">
-            <button className="mt-6  z-60 px-4 py-2 w-fit mx-auto sm:text-sm text-black bg-white h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
+           <button
+              onClick={(e) => {
+                e.stopPropagation();
+                router.push("/passions/musique");
+              }}
+              className="mt-6 z-60 px-4 py-2 pointer-events-auto w-fit mx-auto sm:text-sm text-black bg-white h-12 rounded-2xl hover:shadow-lg transition duration-200"
+            >
               {button}
             </button>
           </div>
@@ -155,7 +168,6 @@ interface CarouselProps {
 
 export function Carousel({ slides }: CarouselProps) {
   const [current, setCurrent] = useState(0);
-
   const handlePreviousClick = () => {
     const previous = current - 1;
     setCurrent(previous < 0 ? slides.length - 1 : previous);
