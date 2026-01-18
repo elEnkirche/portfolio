@@ -1,38 +1,24 @@
-import { MyNavBar } from "@/components/MyNavBar";
+import AlbumWall from "@/components/AlbumWall"
 
-export default function MusiquePage() {
-  return (
-    <div className="min-h-screen bg-background flex flex-col items-center justify-start text-foreground p-8">
-      <header className="w-full">
-        <MyNavBar />
-      </header>
+export default async function MusiquePage() {
+  const PLAYLIST_ID = "14843528943"
+  let url = `https://api.deezer.com/playlist/${PLAYLIST_ID}/tracks`
+  const albumsMap = new Map()
 
-      <main className="flex flex-col items-center mt-16 gap-8 w-full max-w-4xl">
-        <h1 className="text-4xl md:text-5xl font-bold text-center">
-          Musique
-        </h1>
+  while (url) {
+    const res = await fetch(url, { cache: "no-store" })
+    if (!res.ok) break
 
-        <p className="text-center text-lg md:text-xl text-muted-foreground">
-          Bienvenue dans la section Musique ! 🎵
-        </p>
+    const data = await res.json()
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
-          <div className="bg-card rounded-xl p-4 flex flex-col items-center justify-center shadow-md hover:shadow-lg transition">
-            <h2 className="font-semibold text-lg">Titre 1</h2>
-            <p className="text-sm text-muted-foreground">Artiste</p>
-          </div>
+    data.data.forEach((track: any) => {
+      albumsMap.set(track.album.id, track.album)
+    })
 
-          <div className="bg-card rounded-xl p-4 flex flex-col items-center justify-center shadow-md hover:shadow-lg transition">
-            <h2 className="font-semibold text-lg">Titre 2</h2>
-            <p className="text-sm text-muted-foreground">Artiste</p>
-          </div>
+    url = data.next ?? null
+  }
 
-          <div className="bg-card rounded-xl p-4 flex flex-col items-center justify-center shadow-md hover:shadow-lg transition">
-            <h2 className="font-semibold text-lg">Titre 3</h2>
-            <p className="text-sm text-muted-foreground">Artiste</p>
-          </div>
-        </div>
-      </main>
-    </div>
-  );
+  const albums = Array.from(albumsMap.values())
+
+  return <AlbumWall albums={albums} />
 }

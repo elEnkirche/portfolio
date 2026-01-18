@@ -8,6 +8,7 @@ import { useRouter } from 'next/navigation'
 interface SlideData {
   title: string;
   button: string;
+  path: string;
   src: string;
 }
 
@@ -66,7 +67,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     event.currentTarget.style.opacity = "1";
   };
 
-  const { src, button, title } = slide;
+  const { src, button, title, path } = slide;
 
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
@@ -125,7 +126,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
            <button
               onClick={(e) => {
                 e.stopPropagation();
-                router.push("/passions/musique");
+                router.push("/passions/" + path);
               }}
               className="mt-6 z-60 px-4 py-2 pointer-events-auto w-fit mx-auto sm:text-sm text-black bg-white h-12 rounded-2xl hover:shadow-lg transition duration-200"
             >

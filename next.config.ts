@@ -6,7 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     domains:["www.terre.defense.gouv.fr",
       "www.naval-group.com",
-      "www.iut-cachan.universite-paris-saclay.fr"
+      "www.iut-cachan.universite-paris-saclay.fr",
+      "cdn-images.dzcdn.net"
     ]
   },
 };
