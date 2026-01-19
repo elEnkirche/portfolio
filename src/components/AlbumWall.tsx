@@ -8,60 +8,80 @@ type Album = {
 }
 
 export default function AlbumWall({ albums }: { albums: Album[] }) {
-  const [columns, setColumns] = useState(1)
-  const [visibleAlbums, setVisibleAlbums] = useState<Album[]>([])
-  const [coverSize, setCoverSize] = useState(100)
+  const [cols, setCols] = useState(1)
+  const [size, setSize] = useState(100)
+  const [visible, setVisible] = useState<Album[]>([])
 
   useEffect(() => {
-    const updateGrid = () => {
-      const vw = window.innerWidth
-      const vh = window.innerHeight * 0.8
-      const count = albums.length
+    const compute = () => {
+      const W = window.innerWidth
+      const H = window.innerHeight 
+      const max = albums.length
+      const screenRatio = W / H
 
+      let bestScore = -Infinity
       let bestCols = 1
       let bestRows = 1
       let bestSize = 0
 
-      for (let c = 1; c <= count; c++) {
-        const r = Math.max(1, Math.floor(count / c)) // ✅ FIX CRITIQUE
+      for (let c = 1; c <= max; c++) {
+        const s = W / c
+        const r = Math.floor(H / s)
 
-        const sizeW = vw / c
-        const sizeH = vh / r
-        const size = Math.min(sizeW, sizeH)
+        if (r < 1) continue
 
-        if (size > bestSize) {
-          bestSize = size
+        const count = c * r
+        if (count > max) continue
+
+        const gridRatio = c / r
+        const balance = 1 - Math.abs(gridRatio - screenRatio)
+
+        let directionBonus = 0
+
+        if (screenRatio > 1 && r > c) {
+          // paysage → lignes
+          directionBonus = Math.min((r / c - 1) * 0.15, 0.4)
+        }
+
+        if (screenRatio < 1 && c > r) {
+          // portrait → colonnes
+          directionBonus = Math.min((c / r - 1) * 0.15, 0.4)
+        }
+
+        const score = count * balance * (1 + directionBonus)
+
+        if (score > bestScore) {
+          bestScore = score
           bestCols = c
           bestRows = r
+          bestSize = s
         }
       }
 
-      setColumns(bestCols)
-      setCoverSize(bestSize)
-
-      const totalVisible = bestCols * bestRows
-      setVisibleAlbums(albums.slice(0, totalVisible))
+      setCols(bestCols)
+      setSize(bestSize)
+      setVisible(albums.slice(0, bestCols * bestRows))
     }
 
-    updateGrid()
-    window.addEventListener("resize", updateGrid)
-    return () => window.removeEventListener("resize", updateGrid)
+    compute()
+    window.addEventListener("resize", compute)
+    return () => window.removeEventListener("resize", compute)
   }, [albums])
 
   return (
     <div
-      className="grid gap-0.5 p-2 md:mt-20 mt-2"
+      className="grid"
       style={{
-        gridTemplateColumns: `repeat(${columns}, 1fr)`,
-        gridAutoRows: `${coverSize}px`,
+        gridTemplateColumns: `repeat(${cols}, ${size}px)`,
       }}
     >
-      {visibleAlbums.map((album) => (
+      {visible.map(album => (
         <img
           key={album.id}
           src={album.cover_xl}
           alt=""
-          className="w-full h-full object-cover"
+          style={{ width: size, height: size }}
+          className="object-cover"
         />
       ))}
     </div>
