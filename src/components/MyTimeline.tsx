@@ -21,6 +21,10 @@ export function MyTimeline
                 <span className="text-sm text-gray-600">java</span>
               </div>
               <div className="flex flex-col items-center justify-center gap-1 rounded-lg border p-2 bg-neutral-100">
+                <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" width={30} height={30}/>   
+                <span className="text-sm text-gray-600">eclipse</span>
+              </div>
+              <div className="flex flex-col items-center justify-center gap-1 rounded-lg border p-2 bg-neutral-100">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width={30} height={30}/>
                 <span className="text-sm text-gray-600">javascript</span>
               </div>
@@ -78,6 +82,10 @@ export function MyTimeline
               <div className="flex flex-col items-center justify-center gap-1 rounded-lg border p-2 bg-neutral-100">
                 <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" width={30} height={30}/>   
                 <span className="text-sm text-gray-600">c++</span>
+              </div>
+              <div className="flex flex-col items-center justify-center gap-1 rounded-lg border p-2 bg-neutral-100">
+                <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width={30} height={30}/>   
+                <span className="text-sm text-gray-600">linux</span>
               </div>
             </div>
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-semibold mb-8">
@@ -141,10 +149,13 @@ export function MyTimeline
 
             <div className="grid grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-8 mb-8" >
               <div className="flex flex-col items-center justify-center gap-1 rounded-lg border p-2 bg-neutral-100">
+                <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" width={30} height={30}/>   
+                <span className="text-sm text-gray-600">c</span>
+              </div>
+              <div className="flex flex-col items-center justify-center gap-1 rounded-lg border p-2 bg-neutral-100">
                 <img className="" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" width={30} height={30}/>   
                 <span className="text-sm text-gray-600">c++</span>
               </div>
-              
             </div>
 
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-semibold mb-8">
