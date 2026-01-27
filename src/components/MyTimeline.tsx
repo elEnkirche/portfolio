@@ -151,8 +151,11 @@ export function MyTimeline
             Etudiant
           </p>
           <ul className="mb-8 list-none pl-5 space-y-2 text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
-            <li>Apprentissage de l'électronique analogique et numérique</li>
-            <li>...</li>
+            <li>Concevoir et vérifier des systèmes intégrant des composants électriques, électroniques et informatiques</li>
+            <li>Programmer et automatiser des systèmes industriels</li>
+            <li>langages et logiciels: C, C++, LTSpice, solidworks, VHDL</li>
+            <li>projet: Conception d'une pédale à effet pour guitare électrique.</li>
+            <li>projet: Conception d'un robot suiveur de ligne.</li>
           </ul>
         </div>
       ),
