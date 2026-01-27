@@ -193,7 +193,7 @@ export default function SplashScreen({
 
             <p className="text-sm md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
               J'ai conçu ce site avec Next.js afin de m'entrainer au developpement informatique, notamment front-end. 
-              Je me suis aidé de Mistral AI et j'ai utilisé,pour l'instant, de composants 21st dev.
+              Je me suis aidé de Mistral AI et j'ai utilisé des composants 21st dev.
             </p>
           </div>
           <div className="flex flex-row gap-3">
