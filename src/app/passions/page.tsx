@@ -1,4 +1,3 @@
-import { MySocialIcons } from "@/components/MySocialIcons";
 import { MyCarousel } from "@/components/MyCarousel";
 // src/app/page.tsx
 export default function HomePage() {
