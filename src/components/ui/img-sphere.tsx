@@ -61,6 +61,7 @@ export interface ImageData {
   alt: string;
   title?: string;
   description?: string;
+  url?: string;
 }
 // containerSize: 600,          // Container size in pixels
 // sphereRadius: 200,           // Virtual sphere radius (increased for better spacing)
@@ -584,14 +585,15 @@ const SphereImageGrid: React.FC<SphereImageGridProps> = ({
           </div>
 
           {(selectedImage.title || selectedImage.description) && (
-            <div className="p-6">
+            <a href={selectedImage.url}
+            className="p-6 block transition-all hover:bg-gray-100 cursor-pointer">
               {selectedImage.title && (
-                <h3 className="text-xl font-bold mb-2">{selectedImage.title}</h3>
+                <h3 className="text-xl text-black font-bold mb-2">{selectedImage.title}</h3>
               )}
               {selectedImage.description && (
                 <p className="text-gray-600">{selectedImage.description}</p>
               )}
-            </div>
+            </a>
           )}
         </div>
       </div>

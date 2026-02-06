@@ -13,19 +13,22 @@ const BASE_IMAGES: Omit<ImageData, 'id'>[] = [
     src: "cuir.webp",
     alt: "Maroquinerie",
     title: "Site web vitrine du projet d'un ami",
-    description: "Prémière réalisation avec V0dev en NextJs."
+    description: "Prémière réalisation avec V0dev en NextJs.",
+    url: "https://v0-landing-page-for-leather-goods.vercel.app/?_vercel_share=iPctIcQyHkxTH5J1jUgsKsaswgKBeXZZ"
   },
   {
     src: "crypto.webp",
     alt: "Entrainement crypto",
     title: "Plateforme d'entrainement pour trading crypto",
-    description: "Réalisé avec Lovable."
+    description: "Réalisé avec Lovable.",
+    url:"https://coin-collectors-carnival.lovable.app"
   },
   {
     src: "portfolio.webp",
     alt: "Portfolio",
     title: "Ce portfolio",
-    description: "Réalisé à la main sous Next.js en utilisant des composants 21stdev et l'api deezer."
+    description: "Réalisé à la main sous Next.js en utilisant des composants 21stdev et l'api deezer.",
+    url:"https://portfolio-git-main-elenkirches-projects.vercel.app"
   }
 ];
 
@@ -77,7 +80,7 @@ export function DemoOne() {
         <SphereImageGrid
           images={IMAGES}
           containerSize={size}
-          sphereRadius={size * (isMobile ? 0.75 : 0.35)}
+          sphereRadius={size * (isMobile ? 0.70 : 0.35)}
           dragSensitivity={0.8}
           momentumDecay={0.96}
           maxRotationSpeed={6}
