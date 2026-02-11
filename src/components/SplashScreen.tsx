@@ -205,16 +205,6 @@ export default function SplashScreen({
             </Button>
           </div>
         </div>
-        {/* Fin d'ajout */}
-        {/* <motion.button
-          onClick={onEnter}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-8 py-3 rounded-lg bg-primary text-primary-foreground font-semibold shadow-lg"
-        >
-          <MousePointerClick className="inline mr-2" />
-          Entrer
-        </motion.button> */}
       </motion.div>
     </div>
   );
