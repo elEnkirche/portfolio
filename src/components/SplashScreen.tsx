@@ -54,7 +54,7 @@ const GridPattern = ({
 export default function SplashScreen({
   onEnter,
 }: {
-  onEnter: () => void;
+  onEnter: (destination: "/" | "/contacts") => void;
 }) {
   const [gridSize, setGridSize] = useState(40);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -197,10 +197,10 @@ export default function SplashScreen({
             </p>
           </div>
           <div className="flex flex-row gap-3">
-            <Button size="lg" className="gap-4" variant="outline">
+            <Button onClick={() => onEnter("/contacts")} size="lg" className="gap-4" variant="outline">
               Me Contacter <PhoneCall className="w-4 h-4" />
             </Button>
-            <Button onClick={onEnter} size="lg" className="gap-4">
+            <Button onClick={() => onEnter("/")} size="lg" className="gap-4">
               Entrer <MoveRight className="w-4 h-4" />
             </Button>
           </div>

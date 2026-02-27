@@ -11,6 +11,7 @@ export default function SplashWrapper({
   children: React.ReactNode
 }) {
   const [entered, setEntered] = useState(false)
+  const [targetPath, setTargetPath] = useState<string | null>(null)
   const router = useRouter()
   const pathname = usePathname()
 
@@ -19,12 +20,24 @@ export default function SplashWrapper({
     if (pathname !== "/") {
       router.replace("/")
     }
-  }, []) // une seule fois
+  }, [])
+
+  useEffect(() => {
+    // Quand on a navigué vers le bon chemin, on affiche le contenu
+    if (targetPath && pathname === targetPath) {
+      setEntered(true)
+    }
+  }, [pathname, targetPath])
+
+  const handleEnter = (path: string) => {
+    setTargetPath(path)
+    router.replace(path)
+  }
 
   return (
     <AnimatePresence mode="wait">
       {!entered ? (
-        <SplashScreen onEnter={() => setEntered(true)} />
+        <SplashScreen onEnter={handleEnter} />
       ) : (
         <motion.div
           key="site"
