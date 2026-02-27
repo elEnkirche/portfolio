@@ -449,7 +449,7 @@ export default function WealthSimulator() {
       <div
         style={{
           minHeight: "100vh",
-          background: "#060d14",
+          background: "background",
           display: "flex",
           flexDirection: "column",
           fontFamily: "'Syne', sans-serif",
@@ -479,7 +479,7 @@ export default function WealthSimulator() {
             style={{
               fontSize: isMobile ? "22px" : "clamp(24px, 3vw, 36px)",
               fontWeight: 800,
-              color: "#f1f5f9",
+              color: "foreground",
               letterSpacing: "-0.02em",
               lineHeight: 1.1,
             }}
